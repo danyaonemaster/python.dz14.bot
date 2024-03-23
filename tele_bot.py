@@ -41,8 +41,8 @@ def day_name(message):
 
 @bot.message_handler(commands=['month'])
 def send_mouth(message):
-    send_month = bot.reply_to(message, "Hello! Enter a number from 1 to 12")
-    send_month = bot.register_next_step_handler(send_month, month_name)
+    send = bot.reply_to(message, "Hello! Enter a number from 1 to 12")
+    send_month = bot.register_next_step_handler(send, month_name)
 
 
 def month_name(message):
